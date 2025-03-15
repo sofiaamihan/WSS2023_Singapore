@@ -1,0 +1,336 @@
+{
+  "appointments": [
+    {
+      "Appointment_ID": "A001",
+      "Date": "2025-02-16",
+      "Time": "09:00",
+      "Doctor_Name": "Dr. John Tan",
+      "Department": "General Practice",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Blood Test",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C001"
+    },
+    {
+      "Appointment_ID": "A002",
+      "Date": "2025-02-17",
+      "Time": "11:00",
+      "Doctor_Name": "Dr. Lee Wei",
+      "Department": "General Practice",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Urine Test"
+      ],
+      "Clinic_ID": "C002"
+    },
+    {
+      "Appointment_ID": "A003",
+      "Date": "2025-02-18",
+      "Time": "15:00",
+      "Doctor_Name": "Dr. Sim Hui",
+      "Department": "Pediatrics",
+      "Appointment_Type": "Vaccination",
+      "Appointment_Procedures": [
+        "Fast",
+        "Blood Test",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C003"
+    },
+    {
+      "Appointment_ID": "A004",
+      "Date": "2025-02-20",
+      "Time": "10:30",
+      "Doctor_Name": "Dr. Tan Mei Ling",
+      "Department": "Gynecology",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Blood Test"
+      ],
+      "Clinic_ID": "C004"
+    },
+    {
+      "Appointment_ID": "A005",
+      "Date": "2025-02-22",
+      "Time": "08:00",
+      "Doctor_Name": "Dr. Ong Kai",
+      "Department": "Orthopedics",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Urine Test"
+      ],
+      "Clinic_ID": "C005"
+    },
+    {
+      "Appointment_ID": "A006",
+      "Date": "2025-03-01",
+      "Time": "14:00",
+      "Doctor_Name": "Dr. Lee Wei",
+      "Department": "General Practice",
+      "Appointment_Type": "Medication collection",
+      "Appointment_Procedures": [],
+      "Clinic_ID": "C001"
+    },
+    {
+      "Appointment_ID": "A007",
+      "Date": "2025-03-05",
+      "Time": "13:00",
+      "Doctor_Name": "Dr. Tan Mei Ling",
+      "Department": "Gynecology",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Blood Test",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C004"
+    },
+    {
+      "Appointment_ID": "A008",
+      "Date": "2025-03-10",
+      "Time": "11:30",
+      "Doctor_Name": "Dr. Ong Kai",
+      "Department": "Orthopedics",
+      "Appointment_Type": "Vaccination",
+      "Appointment_Procedures": [
+        "Blood Test"
+      ],
+      "Clinic_ID": "C005"
+    },
+    {
+      "Appointment_ID": "A009",
+      "Date": "2025-03-12",
+      "Time": "10:30",
+      "Doctor_Name": "Dr. Sim Hui",
+      "Department": "Pediatrics",
+      "Appointment_Type": "Vaccination",
+      "Appointment_Procedures": [
+        "Fast",
+        "Blood Test"
+      ],
+      "Clinic_ID": "C003"
+    },
+    {
+      "Appointment_ID": "A010",
+      "Date": "2025-03-15",
+      "Time": "09:45",
+      "Doctor_Name": "Dr. John Tan",
+      "Department": "General Practice",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Urine Test"
+      ],
+      "Clinic_ID": "C001"
+    },
+    {
+      "Appointment_ID": "A011",
+      "Date": "2025-04-05",
+      "Time": "13:00",
+      "Doctor_Name": "Dr. Lee Wei",
+      "Department": "General Practice",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Blood Test",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C002"
+    },
+    {
+      "Appointment_ID": "A012",
+      "Date": "2025-04-10",
+      "Time": "14:00",
+      "Doctor_Name": "Dr. Tan Mei Ling",
+      "Department": "Gynecology",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Fast",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C004"
+    },
+    {
+      "Appointment_ID": "A013",
+      "Date": "2025-04-15",
+      "Time": "16:00",
+      "Doctor_Name": "Dr. Sim Hui",
+      "Department": "Pediatrics",
+      "Appointment_Type": "Medication collection",
+      "Appointment_Procedures": [],
+      "Clinic_ID": "C003"
+    },
+    {
+      "Appointment_ID": "A014",
+      "Date": "2025-05-01",
+      "Time": "10:00",
+      "Doctor_Name": "Dr. John Tan",
+      "Department": "General Practice",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Blood Test"
+      ],
+      "Clinic_ID": "C001"
+    },
+    {
+      "Appointment_ID": "A015",
+      "Date": "2025-05-05",
+      "Time": "12:30",
+      "Doctor_Name": "Dr. Ong Kai",
+      "Department": "Orthopedics",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Urine Test",
+        "Fast"
+      ],
+      "Clinic_ID": "C005"
+    },
+    {
+      "Appointment_ID": "A016",
+      "Date": "2025-06-01",
+      "Time": "15:00",
+      "Doctor_Name": "Dr. Tan Mei Ling",
+      "Department": "Gynecology",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Fast",
+        "Blood Test"
+      ],
+      "Clinic_ID": "C004"
+    },
+    {
+      "Appointment_ID": "A017",
+      "Date": "2025-06-15",
+      "Time": "08:45",
+      "Doctor_Name": "Dr. Lee Wei",
+      "Department": "General Practice",
+      "Appointment_Type": "GP visit",
+      "Appointment_Procedures": [
+        "Urine Test"
+      ],
+      "Clinic_ID": "C002"
+    },
+    {
+      "Appointment_ID": "A018",
+      "Date": "2025-07-01",
+      "Time": "09:30",
+      "Doctor_Name": "Dr. Sim Hui",
+      "Department": "Pediatrics",
+      "Appointment_Type": "Vaccination",
+      "Appointment_Procedures": [
+        "Blood Test",
+        "Urine Test"
+      ],
+      "Clinic_ID": "C003"
+    },
+    {
+      "Appointment_ID": "A019",
+      "Date": "2025-08-10",
+      "Time": "11:15",
+      "Doctor_Name": "Dr. John Tan",
+      "Department": "General Practice",
+      "Appointment_Type": "Check-up",
+      "Appointment_Procedures": [
+        "Blood Test",
+        "Fast"
+      ],
+      "Clinic_ID": "C001"
+    },
+    {
+      "Appointment_ID": "A020",
+      "Date": "2025-09-01",
+      "Time": "16:30",
+      "Doctor_Name": "Dr. Tan Mei Ling",
+      "Department": "Gynecology",
+      "Appointment_Type": "Medication collection",
+      "Appointment_Procedures": [],
+      "Clinic_ID": "C004"
+    }
+  ],
+  "clinics": [
+    {
+      "Clinic_ID": "C001",
+      "Name": "HealthFirst Clinic",
+      "Email": "info@healthfirst.com.sg",
+      "Phone": "+65 6123 1234",
+      "Clinic_Type": "General Practitioner",
+      "Opening_Hours": {
+        "Monday": "08:00 - 18:00",
+        "Tuesday": "08:00 - 18:00",
+        "Wednesday": "08:00 - 18:00",
+        "Thursday": "08:00 - 18:00",
+        "Friday": "08:00 - 18:00",
+        "Saturday": "08:00 - 13:00",
+        "Sunday": "Closed"
+      },
+      "Address": "111 Somerset Road, #02-32/33, Singapore 238164"
+    },
+    {
+      "Clinic_ID": "C002",
+      "Name": "CarePlus Medical Center",
+      "Email": "care@careplus.com.sg",
+      "Phone": "+65 6123 5678",
+      "Clinic_Type": "Specialist",
+      "Opening_Hours": {
+        "Monday": "09:00 - 17:00",
+        "Tuesday": "09:00 - 17:00",
+        "Wednesday": "09:00 - 17:00",
+        "Thursday": "09:00 - 17:00",
+        "Friday": "09:00 - 17:00",
+        "Saturday": "09:00 - 13:00",
+        "Sunday": "Closed"
+      },
+      "Address": "8 Sinaran Drive, Novena Medical Center, #10-31, Singapore 307470"
+    },
+    {
+      "Clinic_ID": "C003",
+      "Name": "Pediatrics Care Clinic",
+      "Email": "contact@pediacare.com.sg",
+      "Phone": "+65 6123 8765",
+      "Clinic_Type": "Pediatrician",
+      "Opening_Hours": {
+        "Monday": "08:30 - 17:30",
+        "Tuesday": "08:30 - 17:30",
+        "Wednesday": "08:30 - 17:30",
+        "Thursday": "08:30 - 17:30",
+        "Friday": "08:30 - 17:30",
+        "Saturday": "08:30 - 12:30",
+        "Sunday": "Closed"
+      },
+      "Address": "1F, 133 Telok Ayer Street, Singapore 068602"
+    },
+    {
+      "Clinic_ID": "C004",
+      "Name": "Women's Health Clinic",
+      "Email": "info@womenshealth.com.sg",
+      "Phone": "+65 6123 4321",
+      "Clinic_Type": "Specialist",
+      "Opening_Hours": {
+        "Monday": "09:00 - 18:00",
+        "Tuesday": "09:00 - 18:00",
+        "Wednesday": "09:00 - 18:00",
+        "Thursday": "09:00 - 18:00",
+        "Friday": "09:00 - 18:00",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "Address": "290 Orchard Road, #07-03, The Paragon, Singapore 238859"
+    },
+    {
+      "Clinic_ID": "C005",
+      "Name": "OrthoCare Medical Center",
+      "Email": "appointments@orthocare.com.sg",
+      "Phone": "+65 6123 9876",
+      "Clinic_Type": "Specialist",
+      "Opening_Hours": {
+        "Monday": "08:00 - 18:00",
+        "Tuesday": "08:00 - 18:00",
+        "Wednesday": "08:00 - 18:00",
+        "Thursday": "08:00 - 18:00",
+        "Friday": "08:00 - 18:00",
+        "Saturday": "08:00 - 13:00",
+        "Sunday": "Closed"
+      },
+      "Address": "6 Napier Road, Gleneagles Medical Centre, #02-15, Singapore 258499"
+    }
+  ]
+}
