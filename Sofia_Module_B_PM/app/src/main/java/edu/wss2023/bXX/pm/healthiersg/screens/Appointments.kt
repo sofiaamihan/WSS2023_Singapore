@@ -32,6 +32,7 @@ fun Appointments(
     toEvents: () -> Unit,
     toAppointments: () -> Unit,
     toRecordings: () -> Unit,
+    toDetails: (String, String) -> Unit
 ) {
     val upcoming = readUpcoming(LocalContext.current)
     val past = readPast(LocalContext.current)
@@ -68,7 +69,9 @@ fun Appointments(
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ){
-                            TextButton(onClick = {}) {
+                            TextButton(onClick = {
+                                toDetails(item.date, item.doctor)
+                            }) {
                                 Text(item.type)
                             }
                             Text(
@@ -102,7 +105,9 @@ fun Appointments(
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ){
-                            TextButton(onClick = {}) {
+                            TextButton(onClick = {
+                                toDetails(item.date, item.doctor)
+                            }) {
                                 Text(item.type)
                             }
                             Text(
