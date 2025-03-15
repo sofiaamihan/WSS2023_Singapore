@@ -3,6 +3,9 @@ package edu.wss2023.bXX.pm.healthiersg.components
 import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import edu.wss2023.bXX.pm.healthiersg.R
 import org.json.JSONObject
@@ -10,6 +13,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import kotlin.String
 
 data class Event(
     val id: String,
@@ -221,5 +225,33 @@ fun readPast(context: Context): List<Appointments>{
         }
     }
     return apps
+}
+
+@Composable
+@RequiresApi(Build.VERSION_CODES.O)
+fun getClinic(
+    context: Context,
+    clinic: String,
+): Clinic{
+    val inputStream = context.resources.openRawResource(R.raw.appointments)
+    val bufferedReader = BufferedReader(InputStreamReader(inputStream))
+    val jsonString = bufferedReader.use { it.readText() }
+    val jsonObject = JSONObject(jsonString)
+    val jsonArray = jsonObject.getJSONArray("clinics")
+    var app = Clinic("", "", "", "","")
+
+    for(i in 0 until jsonArray.length()){
+        val item = jsonArray.getJSONObject(i)
+        if(clinic == item.getString("Clinic_ID")){
+            app = Clinic(
+                clinic = item.getString("Clinic_ID"),
+                name = item.getString("Name"),
+                email = item.getString("Email"),
+                phone = item.getString("Phone"),
+                address = item.getString("Address")
+            )
+        }
+    }
+    return app
 }
 

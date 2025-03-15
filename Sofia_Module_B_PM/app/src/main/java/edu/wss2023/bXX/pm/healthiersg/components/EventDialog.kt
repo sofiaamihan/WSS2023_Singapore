@@ -130,3 +130,55 @@ fun Share(context: Context){
         Icon(Icons.Default.IosShare, "Share")
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ContactDialog(
+    name: String,
+    email: String,
+    phone: String,
+    onDismiss: () -> Unit,
+){
+    AlertDialog(
+        onDismissRequest = {
+            onDismiss()
+        },
+        content = {
+            Column (
+                modifier = Modifier
+                    .background(MaterialTheme.colorScheme.primaryContainer)
+                    .fillMaxHeight(0.4f),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ){
+                Text(
+                    text = name,
+                    fontSize = 12.sp,
+                    lineHeight = 14.sp,
+                    modifier = Modifier.padding(top = 4.dp, start = 4.dp)
+                )
+                Text(
+                    text = email,
+                    fontSize = 12.sp,
+                    lineHeight = 14.sp,
+                    modifier = Modifier.padding(top = 4.dp, start = 4.dp)
+                )
+                Text(
+                    text = phone,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    lineHeight = 14.sp,
+                    modifier = Modifier.padding(start = 4.dp, bottom = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .padding(10.dp)
+                        .fillMaxWidth(),
+                    contentAlignment = Alignment.CenterEnd
+                ){
+                    Share(LocalContext.current)
+                }
+            }
+        },
+    )
+}

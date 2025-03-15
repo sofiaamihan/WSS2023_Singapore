@@ -43,14 +43,15 @@ fun RootNavGraph(navController: NavHostController){
                 toRecordings = {
                     navController.navigate(Screens.Recordings.route)
                 },
-                toDetails = { date, doctor ->
-                    navController.navigate("${Screens.Details.route}/${date}/${doctor}")
+                toDetails = { date, doctor, clinic ->
+                    navController.navigate("${Screens.Details.route}/${date}/${doctor}/${clinic}")
                 }
             )
         }
-        composable ("${Screens.Details.route}/{date}/{doctor}"){ backStackEntry ->
+        composable ("${Screens.Details.route}/{date}/{doctor}/{clinic}"){ backStackEntry ->
             val date: String = backStackEntry.arguments?.getString("date") ?: ""
             val doctor: String = backStackEntry.arguments?.getString("doctor") ?: ""
+            val clinic: String = backStackEntry.arguments?.getString("clinic") ?: ""
             AppointmentDetails(
                 toEvents = {
                     navController.navigate(Screens.Events.route)
@@ -62,7 +63,8 @@ fun RootNavGraph(navController: NavHostController){
                     navController.navigate(Screens.Recordings.route)
                 },
                 date,
-                doctor
+                doctor,
+                clinic
             )
         }
         composable (Screens.Recordings.route){

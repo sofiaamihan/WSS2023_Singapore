@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import edu.wss2023.bXX.pm.healthiersg.components.EventCard
 import edu.wss2023.bXX.pm.healthiersg.components.NavigationDrawer
+import edu.wss2023.bXX.pm.healthiersg.components.getClinic
 import edu.wss2023.bXX.pm.healthiersg.components.readPast
 import edu.wss2023.bXX.pm.healthiersg.components.readUpcoming
 
@@ -32,7 +33,7 @@ fun Appointments(
     toEvents: () -> Unit,
     toAppointments: () -> Unit,
     toRecordings: () -> Unit,
-    toDetails: (String, String) -> Unit
+    toDetails: (String, String, String) -> Unit
 ) {
     val upcoming = readUpcoming(LocalContext.current)
     val past = readPast(LocalContext.current)
@@ -48,7 +49,7 @@ fun Appointments(
         ) {
             item {
                 Text(
-                    text = "UPCOMING APPOINTMENTS ",
+                    text = "UPCOMING APPOINTMENTS",
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Start,
                     letterSpacing = 5.sp,
@@ -64,15 +65,16 @@ fun Appointments(
                 ) {
                     items(upcoming.size) { index ->
                         var item = upcoming[index]
+                        var location = getClinic(LocalContext.current, item.clinic).address
                         Row (
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ){
                             TextButton(onClick = {
-                                toDetails(item.date, item.doctor)
+                                toDetails(item.date, item.doctor, item.clinic)
                             }) {
-                                Text(item.type)
+                                Text("${item.type} @ ${location}")
                             }
                             Text(
                                 item.date + item.time,
@@ -100,15 +102,16 @@ fun Appointments(
                 ) {
                     items(past.size) { index ->
                         var item = past[index]
+                        var location = getClinic(LocalContext.current, item.clinic).address
                         Row (
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ){
                             TextButton(onClick = {
-                                toDetails(item.date, item.doctor)
+                                toDetails(item.date, item.doctor, item.clinic)
                             }) {
-                                Text(item.type)
+                                Text("${item.type} @ ${location}")
                             }
                             Text(
                                 item.date + item.time,
