@@ -7,14 +7,23 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import edu.wss2023.bXX.pm.healthiersg.components.NavigationDrawer
 
 @Composable
-fun Recordings(){
-    Column (
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ){
-        Text("Recordings")
+fun Recordings(
+    toEvents: () -> Unit,
+    toAppointments: () -> Unit,
+    toRecordings: () -> Unit,
+){
+    NavigationDrawer(
+        "Recordings", toEvents, toAppointments, toRecordings
+    ) {
+        Column (
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            Text("Recordings")
+        }
     }
 }

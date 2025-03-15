@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import edu.wss2023.bXX.pm.healthiersg.components.RootNavGraph
 import edu.wss2023.bXX.pm.healthiersg.ui.theme.HealthierSGTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +21,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             HealthierSGTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                RootNavGraph(navController = rememberNavController())
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
+
+@Preview(device = "spec:width=1280dp,height=800dp,dpi=240", showSystemUi = true)
 @Composable
-fun GreetingPreview() {
-    HealthierSGTheme {
-        Greeting("Android")
-    }
-}
+fun Preview(){}
