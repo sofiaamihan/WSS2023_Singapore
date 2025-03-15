@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "edu.wss2023.bXX.pm.healthiersg"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "edu.wss2023.bXX.pm.healthiersg"
@@ -40,6 +40,25 @@ android {
 }
 
 dependencies {
+    // Room Database
+    implementation(libs.androidx.room.runtime)
+//    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.room.ktx)
+
+    // Design and Icons
+    implementation(libs.material3)
+    implementation(libs.material.icons.extended)
+    implementation (libs.androidx.material.icons.extended)
+
+    // Datastore Preferences
+    implementation(libs.androidx.datastore.preferences)
+
+    // View Model
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+
+    // Navigation and Animations
+    implementation(libs.androidx.navigation.compose)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
