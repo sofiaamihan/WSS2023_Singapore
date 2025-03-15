@@ -124,6 +124,7 @@ fun UpcomingEvents(
                         EventCard(
                             nPics[index],
                             item.name,
+                            item.description,
                             item.dataTime,
                             item.location
                         )
@@ -151,6 +152,7 @@ fun UpcomingEvents(
                         EventCard(
                             sPics[index],
                             item.name,
+                            item.description,
                             item.dataTime,
                             item.location
                         )
@@ -178,6 +180,7 @@ fun UpcomingEvents(
                         EventCard(
                             ePics[index],
                             item.name,
+                            item.description,
                             item.dataTime,
                             item.location
                         )
@@ -205,6 +208,7 @@ fun UpcomingEvents(
                         EventCard(
                             wPics[index],
                             item.name,
+                            item.description,
                             item.dataTime,
                             item.location
                         )
@@ -232,6 +236,7 @@ fun UpcomingEvents(
                         EventCard(
                             cPics[index],
                             item.name,
+                            item.description,
                             item.dataTime,
                             item.location
                         )
