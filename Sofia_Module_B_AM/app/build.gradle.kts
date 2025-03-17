@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "edu.wss2023.bxx.am.mobilehealthiersg"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "edu.wss2023.bxx.am.mobilehealthiersg"
@@ -61,6 +61,8 @@ dependencies {
 
     // Navigation and Animations
     implementation(libs.androidx.navigation.compose)
+
+    implementation(libs.coil.compose)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
