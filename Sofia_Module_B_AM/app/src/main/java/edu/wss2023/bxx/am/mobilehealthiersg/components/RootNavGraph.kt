@@ -65,20 +65,48 @@ fun RootNavGraph(navController: NavHostController, tokenDataStore: TokenDataStor
                 },
                 toFoodJournal = {
                     navController.navigate(Screens.FoodJournal.route)
+                },
+                toAllRecords = {
+                    navController.navigate(Screens.MRList.route)
+                },
+                toLabResults = {
+                    navController.navigate(Screens.LabResults.route)
+                },
+                toConditions = {
+                    navController.navigate(Screens.Conditions.route)
+                },
+                toAddRecords = {
+                    navController.navigate(Screens.AddRecord.route)
                 }
             )
         }
         composable(Screens.MRList.route){
-            MedicalRecordsListScreen()
+            MedicalRecordsListScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.Conditions.route){
-            ViewConditionDetailsScreen()
+            ViewConditionDetailsScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.LabResults.route){
-            ViewLabResultDetailsScreen()
+            ViewLabResultDetailsScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.AddRecord.route){
-            AddRecordScreen()
+            AddRecordScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.FoodJournal.route){
             FoodJournalScreen(
@@ -90,14 +118,28 @@ fun RootNavGraph(navController: NavHostController, tokenDataStore: TokenDataStor
                 },
                 toFoodJournal = {
                     navController.navigate(Screens.FoodJournal.route)
+                },
+                toAddMeal = {
+                    navController.navigate(Screens.AddMeal.route)
+                },
+                toEditMeal = {
+                    navController.navigate(Screens.EditMeal.route)
                 }
             )
         }
         composable(Screens.AddMeal.route){
-            AddMealEntryScreen()
+            AddMealEntryScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.EditMeal.route){
-            EditMealEntryScreen()
+            EditMealEntryScreen(
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.Profile.route){
             ProfileScreen(
