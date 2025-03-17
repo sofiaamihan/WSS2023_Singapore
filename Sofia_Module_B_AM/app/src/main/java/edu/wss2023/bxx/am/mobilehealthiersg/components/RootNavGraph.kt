@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import edu.wss2023.bxx.am.mobilehealthiersg.data.TokenDataStore
 import edu.wss2023.bxx.am.mobilehealthiersg.screens.AddMealEntryScreen
 import edu.wss2023.bxx.am.mobilehealthiersg.screens.AddRecordScreen
 import edu.wss2023.bxx.am.mobilehealthiersg.screens.EditMealEntryScreen
@@ -41,13 +42,18 @@ sealed class Screens(val route: String){
 }
 
 @Composable
-fun RootNavGraph(navController: NavHostController){
+fun RootNavGraph(navController: NavHostController, tokenDataStore: TokenDataStore){
     NavHost (
         navController = navController,
         startDestination = Screens.Profile.route
     ){
         composable(Screens.NextOfKin.route){
-            EditNextOfKinScreen()
+            EditNextOfKinScreen(
+                tokenDataStore,
+                toBack = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(Screens.MedicalRecords.route){
             MedicalRecordsScreen(

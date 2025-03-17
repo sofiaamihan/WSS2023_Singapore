@@ -57,7 +57,7 @@ class TokenDataStore(private val context: Context) {
         }
     }
 
-    suspend fun sameName2(name: String){
+    suspend fun saveName2(name: String){
         context.dataStore.edit { preferences ->
             preferences[NAME2] = name
         }
