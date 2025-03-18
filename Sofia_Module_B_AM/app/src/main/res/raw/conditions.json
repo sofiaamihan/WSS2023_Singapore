@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "Name": "Asthma",
+      "Onset_Date": "2020-04-10",
+      "Abatement_Date": "2022-04-10",
+      "Notes": ""
+    },
+    {
+      "Name": "Hypertension",
+      "Onset_Date": "2020-08-15",
+      "Abatement_Date": "",
+      "Notes": ""
+    },
+    {
+      "Name": "Diabetes",
+      "Onset_Date": "2021-01-20",
+      "Abatement_Date": "",
+      "Notes": ""
+    },
+    {
+      "Name": "Rheumatoid Arthritis",
+      "Onset_Date": "2021-06-05",
+      "Abatement_Date": "",
+      "Notes": "Currently under treatment."
+    },
+    {
+      "Name": "Chronic Migraine",
+      "Onset_Date": "2022-02-12",
+      "Abatement_Date": "2023-06-30",
+      "Notes": "Reduced frequency of attacks."
+    },
+    {
+      "Name": "Hyperthyroidism",
+      "Onset_Date": "2023-03-01",
+      "Abatement_Date": "",
+      "Notes": ""
+    },
+    {
+      "Name": "Gout",
+      "Onset_Date": "2024-07-15",
+      "Abatement_Date": "",
+      "Notes": "Occasional flare-ups."
+    }
+  ]
+}

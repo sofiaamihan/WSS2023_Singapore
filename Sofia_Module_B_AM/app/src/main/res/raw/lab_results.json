@@ -1,0 +1,144 @@
+{
+  "lab_results": [
+    {
+      "Name": "Blood Sugar Test",
+      "Location": "General Health Clinic",
+      "Specimen_Collection_Date": "2020-05-02",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Complete Blood Count (CBC)",
+      "Location": "HeartCare Clinic",
+      "Specimen_Collection_Date": "2020-07-15",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Thyroid Function Test",
+      "Location": "Endocrine Health Centre",
+      "Specimen_Collection_Date": "2020-09-01",
+      "Test_Result": "Low TSH",
+      "Notes": ""
+    },
+    {
+      "Name": "Liver Function Test",
+      "Location": "GastroCare Clinic",
+      "Specimen_Collection_Date": "2021-02-14",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Urine Test",
+      "Location": "Urology Centre",
+      "Specimen_Collection_Date": "2021-03-05",
+      "Test_Result": "Positive for infection",
+      "Notes": ""
+    },
+    {
+      "Name": "Chest X-ray",
+      "Location": "Pulmonology Care Centre",
+      "Specimen_Collection_Date": "2021-06-10",
+      "Test_Result": "Clear",
+      "Notes": ""
+    },
+    {
+      "Name": "Lipid Profile",
+      "Location": "General Health Clinic",
+      "Specimen_Collection_Date": "2021-08-25",
+      "Test_Result": "High Cholesterol",
+      "Notes": "Follow-up in 6 months."
+    },
+    {
+      "Name": "Kidney Function Test",
+      "Location": "Orthopedic Specialists",
+      "Specimen_Collection_Date": "2022-01-18",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Vitamin D Test",
+      "Location": "SkinCare Specialists",
+      "Specimen_Collection_Date": "2022-04-03",
+      "Test_Result": "Deficient",
+      "Notes": "Started Vitamin D supplementation."
+    },
+    {
+      "Name": "Pregnancy Test",
+      "Location": "Obstetrics Care Centre",
+      "Specimen_Collection_Date": "2022-09-12",
+      "Test_Result": "Positive",
+      "Notes": "First trimester checkup."
+    },
+    {
+      "Name": "Bacterial Culture",
+      "Location": "GastroCare Clinic",
+      "Specimen_Collection_Date": "2023-01-10",
+      "Test_Result": "Negative",
+      "Notes": ""
+    },
+    {
+      "Name": "Electrolyte Test",
+      "Location": "General Health Clinic",
+      "Specimen_Collection_Date": "2023-04-02",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Vitamin B12 Test",
+      "Location": "Endocrine Health Centre",
+      "Specimen_Collection_Date": "2023-08-14",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "Blood Pressure Monitoring",
+      "Location": "HeartCare Clinic",
+      "Specimen_Collection_Date": "2023-11-25",
+      "Test_Result": "Normal",
+      "Notes": "No signs of hypertension."
+    },
+    {
+      "Name": "Hepatitis B Test",
+      "Location": "SkinCare Specialists",
+      "Specimen_Collection_Date": "2024-02-01",
+      "Test_Result": "Negative",
+      "Notes": ""
+    },
+    {
+      "Name": "Hemoglobin A1c",
+      "Location": "General Health Clinic",
+      "Specimen_Collection_Date": "2024-05-20",
+      "Test_Result": "6.2%",
+      "Notes": "Pre-diabetic range."
+    },
+    {
+      "Name": "Electrocardiogram (ECG)",
+      "Location": "Cardiology Centre",
+      "Specimen_Collection_Date": "2024-09-04",
+      "Test_Result": "Normal",
+      "Notes": ""
+    },
+    {
+      "Name": "HIV Test",
+      "Location": "HealthCare Clinic",
+      "Specimen_Collection_Date": "2024-12-10",
+      "Test_Result": "Negative",
+      "Notes": ""
+    },
+    {
+      "Name": "Tuberculosis Skin Test",
+      "Location": "Pulmonology Care Centre",
+      "Specimen_Collection_Date": "2025-01-13",
+      "Test_Result": "Negative",
+      "Notes": ""
+    },
+    {
+      "Name": "C-reactive Protein (CRP)",
+      "Location": "GastroCare Clinic",
+      "Specimen_Collection_Date": "2025-02-09",
+      "Test_Result": "Elevated",
+      "Notes": "Possible inflammation."
+    }
+  ]
+}
